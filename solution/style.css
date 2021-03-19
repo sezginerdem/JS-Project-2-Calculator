@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkmagenta;
+    height: 100vh;
+}
+
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    'acc acc dell div'
+    'on tw th mult'
+    'fr fv sx pls'
+    'svn eig nn mns'
+    'dott zr eql eql'
+    ;
+    gap: 2px;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+#result {
+    grid-area: res;
+    background-color: darkblue;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    overflow-y: auto;
+
+}
+
+#upper {
+    text-align: right;
+    font-size: large;
+    color: rgba(245, 245, 245, 0.76);
+    margin: 10px;
+    display: inline;
+    word-break: break-all;
+}
+
+#lower {
+    text-align: right;
+    font-size: x-large;
+    color: white;
+    margin: 0px 10px 10px 10px;
+    display: inline;
+    word-break: break-all;
+}
+
+#ac {
+    grid-area: acc;
+}
+
+#del {
+    grid-area: dell;
+}
+
+#divide {
+    grid-area: div;
+}
+
+#multiply {
+    grid-area: mult;
+}
+
+#plus {
+    grid-area: pls;
+}
+
+#minus {
+    grid-area: mns;
+}
+
+#dot {
+    grid-area: dott;
+}
+
+#equal {
+    grid-area: eql;
+}
+
+#zero {
+    grid-area: zr;
+}
+
+#one {
+    grid-area: on;
+}
+
+#two {
+    grid-area: tw;
+}
+
+#three {
+    grid-area: th;
+}
+
+#four {
+    grid-area: fr;
+}
+
+#five {
+    grid-area: fv;
+}
+
+#six {
+    grid-area: sx;
+}
+
+#seven {
+    grid-area: svn;
+}
+
+#eight {
+    grid-area: eig;
+}
+
+#nine {
+    grid-area: nn;
+}
+
+button {
+    padding: 23px 15px;
+    background-color: pink;
+    font-size: larger;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 204);
+}
